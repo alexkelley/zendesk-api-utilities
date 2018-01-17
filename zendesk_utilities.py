@@ -16,7 +16,6 @@ import sys
 Zendesk API documentation: https://developers.pipedrive.com/v1
 
 General logic:
-- Get 
 - for each object (organizations, users, tickets):
   - get json via API
   - strip off json labels as column labels
@@ -25,7 +24,6 @@ General logic:
   - for each record:
     - send record to generate sql function
     - execute insert into table 
-
 """
 def get_organizations():
     data = get_data('organizations.json', 'organizations')
